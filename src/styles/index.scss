@@ -1,0 +1,54 @@
+@import './variables';
+@import './colors';
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: $primary-font-stack;
+  background-color: $grey-accent;
+  color: $indigo-accent;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  background-color: $grey;
+  border: none;
+  border-radius: 15px;
+  color: $white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px; 
+
+  &:hover,
+  &:focus {
+    background-color: $indigo;
+  }
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+input,
+select {
+  color: $grey;
+  border: none;
+  font-style: italic;
+  outline: none;
+  line-height: 1.5;
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+

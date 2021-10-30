@@ -1,0 +1,95 @@
+@import './variables';
+@import './colors';
+
+.pictureList, .tagsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 70px;
+  width: 20vw;
+  height: 250px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.actions{
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px ;
+  top: 65%;
+  left: 67%;
+  background-color: $white;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+.likes, .comments{
+ width: 40px;
+ color: $grey;
+ text-align: center;
+}
+
+.tag {
+  padding: 3px 15px 3px;
+  background-color: $grey;
+  border-radius: 15px;
+  margin: 3px;
+  color: $white;
+}
+
+.tagsWrapper{
+   background-color: $white;
+   justify-content: start;
+   padding: 7px;
+}
+
+.details{
+margin: 15px;
+ word-wrap: break-word;
+}
+
+.imgcover{
+  height: 85vh;
+  width: 60vw;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.detailswrap{
+  width: 35%;
+  background-color: $white;
+  border-radius: 15px;
+  margin-left: 15px;
+  opacity: 0.8;
+}
+
+.detailsTitle{
+  font-weight: 800;
+}
+
+.filtersCover {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  font-weight: 700;
+  margin-left: 50px;
+}
